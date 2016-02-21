@@ -1,0 +1,430 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset, img { border: 0 }
+:focus { outline: hidden }
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video { display: block }
+mark, rp, rt, ruby, summary, time { display: inline }
+
+/* Left & Right alignment */
+.left { float: left }
+.right { float: right }
+.clear {clear: both}
+
+li { list-style-type: none}
+
+body {
+	background: url("images/bg.png") repeat-x;
+	font-family: arial;
+	font-size: 12px;
+	color: #222222;
+	line-height: 16px;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+a {
+	color: #136CB2;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+th, td {
+	vertical-align: top;
+	text-align: left;	
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #000;
+	text-transform: lowercase;
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 14px;
+	color: #387ABB;
+	margin-bottom: 10px;
+}
+
+.red {
+	color: #DD2515;
+}
+
+.hidden {
+	display: none;
+}
+
+.line {
+	background: #CACACA;
+	width: 100%;
+	height: 1px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.clear { clear: both; }
+
+input {
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input.textbox {
+	padding: 3px;
+	border: 1px solid #CACACA;
+	width: 300px;
+	height: 26px;
+	color: #387ABB;
+	font-weight: bold;
+}
+
+#header {
+	width: 95%;
+	height: 46px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	
+	color: #222;
+	line-height: 48px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#header a { color: #387ABB; }
+#header a:hover { color: #000; text-decoration: none;}
+
+#header #logo  {
+	float: left;
+}
+
+#header #logo .title {
+	color: #000;
+	font-weight: normal;
+	font-size: 24px;
+	font-family: "Trebuchet MS", Arial;
+}
+
+#header #logo .description {
+	color: #000;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: Arial;
+	margin-left: 10px;
+}
+
+#pagewrap {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content-left {
+	width: 67%;
+	border: 1px solid #CACACA;
+	float: left;
+}
+
+#content-right {
+	width: 30%;
+	border: 1px solid #CACACA;
+	float: right;
+	background-color: #FBFBFB;
+}
+
+#content-left .content-wrapper { padding: 15px; }
+#content-right .content-wrapper { padding: 15px; }
+
+
+.client-selected {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.client-selected #client {
+	color: #2D9F00;
+}
+
+#commandinfo {
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+/* ------------- Tabs --------------- */
+
+.smoothTabs .current { }
+.smoothTabs .hidden { display: none; }
+.smoothTabs .visible { display: block; }
+
+.smoothTabs li a:focus { outline: 0; }
+
+.smoothTabs .tab {
+	float: left;
+	width: 100%;
+	height: 455px;
+	border: 1px solid #CACACA;
+	margin-top: -1px;
+}
+
+.smoothTabs .tab .wrapper {
+	padding: 15px;
+	padding-top: 20px;
+}
+
+.smoothTabs li a {
+	color: #333333;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 24px;
+	display: block;
+	padding: 0px 10px;
+	border: 1px solid #BCBCBC;
+	background-color: #F8F8F8;
+	margin-right: 5px;
+	cursor: pointer;
+	float: left;
+}
+
+.smoothTabs .current a, .smoothTabs li a:hover {
+	background-color: #387ABB;
+	border: 1px solid #518CC6;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* ---------------- Files Manager Tab ---------------------- */
+
+.filestab #browsePath {
+	font-family: verdana;
+	font-size: 11px;
+	width: 70%;
+	margin-bottom: 10px;
+}
+
+.filestab #btnIcons a {
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.filestab #btnIcons #btnHome { background: url("images/home.png") no-repeat; }
+.filestab #btnIcons #btnHome:hover { background: url("images/home_hover.png") no-repeat; }
+
+.filestab #btnIcons #btnDirUp { background: url("images/up.png") no-repeat;}
+.filestab #btnIcons #btnDirUp:hover { background: url("images/up_hover.png") no-repeat;}
+
+.filestab #browse-container {
+	width: 100%;
+	height: 300px;
+	border: 1px solid #CACACA;
+	overflow-y: scroll;
+	margin-bottom: 10px;
+}
+
+.filestab #browse {
+	padding: 15px;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.filestab #browse .listing {
+	line-height: 17px;
+	margin-bottom: 3px;
+}
+
+.filestab #browse .listing  img {
+	float: left;
+	margin-right: 5px;
+}
+
+.filestab #browse .listing .size {
+	color: #2C6194;
+}
+
+.filestab #browse a { color: #333333; }
+.filestab #browse a:hover { color: #387ABB; text-decoration: none; }
+
+
+.filestab #fileoperations {
+	float: left;
+	line-height: 25px;
+	display: none;
+}
+
+.filestab #fileoperations #selectedfile {
+	display: block;
+	margin-bottom: -5px;
+}
+
+.filestab #fileoperations span {
+	display: none;
+}
+
+.filestab #downloadPath{
+	width: 150px;
+}
+
+/* ---------------- Commands Tab ---------------------- */
+
+.commandstab #commands-container {
+	width: 100%;
+	height: 330px;
+	border: 1px solid #CACACA;
+	overflow-y: scroll;
+	margin-bottom: 10px;
+}
+
+.commandstab #commands {
+	padding: 15px;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.commandstab #commands .listing { line-height: 20px; }
+.commandstab #commands .listing .result { width: 80px; font-weight: bold; float: left; }
+.commandstab #commands .listing .command { width: 80px; float: left; font-style: italic;}
+.commandstab #commands .listing .parameters { float: left; }
+
+.commandstab #commands .listing .result.success { color: #2D9F00;}
+.commandstab #commands .listing .result.error { color: #DD2515;}
+
+.commandstab #commandinput .command { width: 20%; }
+.commandstab #commandinput .parameters { width: 55%; }
+
+
+/* ---------------- Processes Tab ---------------------- */
+
+.processestab  #process {
+	width: 150px;
+}
+
+.processestab  #processlist-container {
+	width: 100%;
+	height: 340px;
+	border: 1px solid #CACACA;
+	overflow-y: scroll;
+	margin-top: 10px;
+	background-color: #FBFBFB;
+}
+
+.processestab #processlist {
+	padding: 15px;
+	font-family: arial;
+	font-size: 12px;
+}
+
+
+/* ---------------- Notes Tab ---------------------- */
+
+.notestab #notes {
+	width: 100%;
+	height: 345px;
+	padding: 10px;
+	border: 1px solid #CACACA;
+	margin-bottom: 10px;
+	font-family: "courier new";
+	font-size: 13px;
+	background-color: #FBFBFB;
+}
+
+.notestab #btnSaveNotes {
+	float: right;
+}
+
+/* --------------- Clients Box -------------------- */
+
+.clients-box h2 {
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 5px;
+}
+
+.clients-box #clients li {
+	line-height: 18px; 
+	background: url("images/client.png") no-repeat;
+	padding-left: 20px;
+	margin-bottom: 3px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.clients-box #clients li a {
+	font-weight: bold;
+	color: #2D9F00;
+}
+
+
+/* ------------- Uploads Box --------------- */
+
+#uploads-box {
+	width: 50%;
+	border: 1px solid #CACACA;
+	float: left;
+	
+}
+
+#serverfiles-box {
+	width: 47%;
+	border: 1px solid #CACACA;
+	float: right;
+	
+}
+
+#uploads-box .uploads-wrapper { padding: 15px; }
+#serverfiles-box .serverfiles-wrapper { padding: 15px; }
+
+#serverfiles-box iframe {
+	border: 0px;
+	width: 100%;
+	height: 190px;
+}
+
+#uploads-box #clients-uploads li {
+	line-height: 18px;
+	margin-left: 20px;
+	margin-bottom: 3px;
+	font-size: 13px;
+	list-style-type: circle;
+}
+
+#uploads-box #clients-uploads li a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+#uploads-box #clients-uploads li .box {
+	border: 1px solid #CACACA;
+	padding: 10px;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+#uploads-box #clients-uploads li .box a { 
+	font-size: 12px;
+}
+
+#uploads-box #clients-uploads li .box span {
+	color: #666666;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+
